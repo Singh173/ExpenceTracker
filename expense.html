@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="account-info">
+            <p>Account Holder: <span id="account-holder">Vinit Kumar</span></p>
+            <p>Account Number: <span id="account-number">1414171414</span></p>
+        </div>
+        <div class="balance">
+            <h2>Current Amount: $<span id="current-amount">1000000.00</span></h2>
+        </div>
+        <div class="transaction">
+            <h3>Add Transaction</h3>
+            <form id="transaction-form">
+                <input type="text" id="transaction-desc" placeholder="Description" required>
+                <input type="number" id="transaction-amount" placeholder="Amount" required>
+                <select id="transaction-type">
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                </select>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </div>
+        <div class="transaction-list">
+            <h3>Transaction History</h3>
+            <ul id="transaction-history"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
